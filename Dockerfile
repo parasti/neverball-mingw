@@ -1,6 +1,6 @@
 FROM fedora
 ADD https://github.com/parasti/mingw-list-deps/raw/master/mingw-list-deps /usr/local/bin/mingw-list-deps
-RUN chmod a+x /usr/local/bin/mingw-list-deps
+RUN chmod a+rx /usr/local/bin/mingw-list-deps
 RUN dnf --assumeyes install \
     make \
     findutils \
