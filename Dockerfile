@@ -4,6 +4,7 @@ RUN chmod a+rx /usr/local/bin/mingw-list-deps
 RUN dnf --assumeyes install \
     make \
     findutils \
+    git \
     mingw32-gcc \
     mingw32-SDL2 \
     mingw32-SDL2_ttf \
@@ -13,3 +14,4 @@ RUN dnf --assumeyes install \
     mingw32-libvorbis \
     mingw32-gettext \
     mingw32-curl
+RUN git config --global --add safe.directory /neverball
